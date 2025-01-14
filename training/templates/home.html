@@ -1,0 +1,87 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}{% endblock %}
+{% block decription %}{% endblock %}
+{% block keywords %}{% endblock %}
+
+{% block extend_header %}{% endblock %}
+
+{% block extend_footer %}{% endblock %}
+{% block content %}
+<section>
+  <div class="bannerSection">
+    <div class="container">
+      <div class="row g-4 g-md-3  align-items-left">
+        <div class="col-md">
+          <div class="bannerContent">
+            <h1 class="xlTitle pb-3">FitnessWave,<br> будь на волне </br></h1>
+            <div class="bannerBtnCol">
+              <div class="row">
+                <div class="col-auto">
+                  <a href="{% url 'training:contact' %}" class="btn btnPrimary">Записаться</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section>
+  <div class="sectionSpaceSm lightBg">
+    <div class="container">
+      <div class="row pb-3">
+        <div class="col">
+          <div id = "about"> </div>
+          <h4 class="xlTitle pb-3">Мы - команда с душой</h4>
+          <h5 class="smText regular">Наш фитнес-клуб — это место, где ваши мечты о здоровом и сильном теле становятся реальностью. Мы создали пространство, которое вдохновляет на движение, развитие и новые достижения. Просторные залы с современным оборудованием, профессиональные тренеры и уютная атмосфера помогают с легкостью достигать любых фитнес-целей. <br>Мы понимаем, что каждый человек уникален, поэтому предлагаем гибкие программы и индивидуальные решения, соответствующие вашим целям и уровню подготовки. В нашем клубе представлены групповые занятия для любителей динамики и командного духа: йога, пилатес, кардио, силовые тренировки и многое другое.</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section>
+  <div class="sectionSpace">
+    <div class="container">
+      <div class="portfolioCol">
+        <div class="row pb-3">
+          <div class="col">
+            <div id = "addresses"> </div>
+            <h4 class="xlTitle pb-3">Адреса</h4>
+          </div>
+        </div>
+        <div class="portfolioCard">
+          <div class="row g-4 align-items-center">
+            <div class="col-md-auto">
+              <div class="portfolioImgCol">
+                <h5 class="smText regular">· Улица Бекетова, 3Б, Нижний Новгород <br>· Улица Калинина, 108, Пенза</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section>
+  <div class="sectionSpaceSm lightBg">
+    <div class="container">
+      <div class="row pb-3">
+        <div class="col">
+          <div id = "comms"> </div>
+          <h4 class="xlTitle pb-3">Связаться с нами:</h4>
+          <h5 class="smText regular">· Telegram - +7(777) 777-77-77<br>· Instagram - https://www.instagram.com/aaa555<br>Или заполните <a href="{% url 'training:contact' %}" class="btn btnPrimary">email-форму</a> </h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

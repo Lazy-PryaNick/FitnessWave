@@ -1,0 +1,30 @@
+{% load static %}
+<header>
+    <div class="headerCol">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-auto">
+                    <div class="logoCol"><a href="{% url 'training:home' %}"><img src="{% static 'media/logo.jpg' %}" alt="..."></a></div>
+                </div>
+                <div class="col">
+                    <div class="d-md-none">
+                    <button class="navToggle">
+                        <span class="navToggle__text">Toggle Menu</span>
+                    </button>
+                    </div>
+                    <div class="navCollapseCol">
+                        <div class="navCol">
+                            <h5 class="smText regular">FitnessWave</h5>
+                            <ul>
+                                <li><a href="/#about">О нас</a></li>
+                                <li><a href="{%url 'training:portfolio'%}">Спортинвентарь</a></li>
+                                <li><a href="/#addresses">Адреса</a></li>
+                                <li><a href="/#comms">Связь с нами</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
